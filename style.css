@@ -427,6 +427,8 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+
+    /* الهيدر */
     .hero-section {
         padding: 80px 0;
     }
@@ -439,10 +441,12 @@ h1, h2, h3 {
         font-size: 1rem;
     }
 
+    /* السكيلز */
     .expertise-grid {
         flex-direction: column;
     }
 
+    /* السيرتيفيكيشن - المشكلة الرئيسية */
     .certifications-list::before {
         left: 10px;
     }
@@ -460,31 +464,28 @@ h1, h2, h3 {
         right: auto !important;
     }
 
+    /* النافبار */
     .navbar .container {
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .navbar a {
+        margin-left: 10px;
+        font-size: 0.85rem;
     }
 
     .burger {
-        display: block;
-    }
-
-    .nav-links {
         display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
     }
 
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        margin: 8px 0;
-    }
-
+    /* H2 */
     h2 {
         font-size: 1.8rem;
     }
