@@ -463,6 +463,36 @@ h1, h2, h3 {
         font-size: 0.85rem;
     }
 
+    .burger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 8px 0;
+    }
+}
     h2 {
         font-size: 1.8rem;
     }
