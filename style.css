@@ -417,8 +417,16 @@ h1, h2, h3 {
     color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
 
+@media (max-width: 768px) {
     .hero-section {
         padding: 80px 0;
     }
@@ -453,26 +461,10 @@ h1, h2, h3 {
     }
 
     .navbar .container {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 5px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
-    .navbar a {
-        margin-left: 10px;
-        font-size: 0.85rem;
-    }
-
-    .burger {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
     .burger {
         display: block;
     }
@@ -492,7 +484,7 @@ h1, h2, h3 {
     .nav-links a {
         margin: 8px 0;
     }
-}
+
     h2 {
         font-size: 1.8rem;
     }
